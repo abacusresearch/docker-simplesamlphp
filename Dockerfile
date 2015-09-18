@@ -18,3 +18,4 @@ RUN cd /usr/share/simplesamlphp && php composer.phar install
 
 RUN ln -s /usr/share/simplesamlphp/www /var/www/html/idp
 RUN touch /var/www/html/index.html
+RUN mkdir /usr/share/simplesamlphp/cert
