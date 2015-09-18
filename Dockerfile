@@ -16,4 +16,5 @@ RUN git clone -b v1.13.2 https://github.com/simplesamlphp/simplesamlphp /usr/sha
 RUN cd /usr/share/simplesamlphp && curl -sS https://getcomposer.org/installer | php
 RUN cd /usr/share/simplesamlphp && php composer.phar install
 
-RUN ln -s /usr/share/simplesamlphp/www /var/www/html/idp 
+RUN ln -s /usr/share/simplesamlphp/www /var/www/html/idp
+RUN touch /var/www/html/index.html
